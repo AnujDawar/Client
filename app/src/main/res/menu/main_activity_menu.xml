@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/info_id"
+        android:title="Info"
+        android:icon="@mipmap/ic_info_white_24dp"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/addCommands_id"
+        android:title="Add Commands"
+        android:icon="@mipmap/ic_add_circle_white_24dp"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/Clear_id"
+        android:title="Clear"
+        android:icon="@mipmap/ic_delete_white_24dp"
+        app:showAsAction="always">
+    </item>
+
+
+    <item
+        android:id="@+id/next_id"
+        android:title="Next"
+        android:icon="@mipmap/ic_trending_flat_white_24dp"
+        app:showAsAction="always">
+    </item>
+
+</menu>

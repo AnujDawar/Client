@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anujdawar.client.MainActivity"
+    android:background="#f4ffff">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipAddressTextBox"
+        android:hint="          IP Address          "
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portNumberTextBox"
+        android:hint="Port Number"
+        android:textSize="20dp"
+        android:layout_below="@+id/ipAddressTextBox"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/resultTextBoxMain"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogSwitch5"
+        android:checked="false"
+        android:padding="15dp"
+        android:layout_above="@+id/resultTextBoxMain"
+        android:layout_alignRight="@+id/ipAddressTextBox"
+        android:layout_alignEnd="@+id/ipAddressTextBox"
+        android:visibility="gone" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogSwitch1"
+        android:checked="false"
+        android:padding="15dp"
+        android:layout_above="@+id/analogSwitch2"
+        android:layout_alignRight="@+id/ipAddressTextBox"
+        android:visibility="gone" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogSwitch4"
+        android:checked="false"
+        android:padding="15dp"
+        android:layout_above="@+id/analogSwitch5"
+        android:layout_alignRight="@+id/ipAddressTextBox"
+        android:visibility="gone" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogSwitch3"
+        android:checked="false"
+        android:padding="15dp"
+        android:layout_above="@+id/analogSwitch4"
+        android:layout_alignRight="@+id/ipAddressTextBox"
+        android:visibility="gone" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogSwitch2"
+        android:checked="false"
+        android:padding="15dp"
+        android:layout_above="@+id/analogSwitch3"
+        android:layout_alignRight="@+id/ipAddressTextBox"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check For Analog"
+        android:id="@+id/textView"
+        android:alpha="0.7"
+        android:textColor="#6a6cf6"
+        android:layout_alignBaseline="@+id/savedNameDeviceID1"
+        android:layout_alignBottom="@+id/savedNameDeviceID1"
+        android:layout_toRightOf="@+id/resultTextBoxMain"
+        android:layout_toEndOf="@+id/resultTextBoxMain" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:layout_alignBaseline="@+id/Device2TextBox"
+        android:layout_alignBottom="@+id/Device2TextBox"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignStart="@+id/checkBox1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox1"
+        android:checked="false"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/portNumberTextBox"
+        android:layout_alignEnd="@+id/portNumberTextBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:checked="false"
+        android:layout_alignBaseline="@+id/Device4TextBox"
+        android:layout_alignBottom="@+id/Device4TextBox"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:checked="false"
+        android:layout_alignBaseline="@+id/Device3TextBox"
+        android:layout_alignBottom="@+id/Device3TextBox"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/savedNameDeviceID1"
+        android:textAlignment="center"
+        android:alpha="0.7"
+        android:textColor="#6a6cf6"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/portNumberTextBox"
+        android:layout_alignLeft="@+id/ipAddressTextBox"
+        android:layout_alignStart="@+id/ipAddressTextBox"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Device3TextBox"
+        android:hint="Device 3"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/Device2TextBox"
+        android:layout_alignLeft="@+id/Device2TextBox"
+        android:layout_alignStart="@+id/Device2TextBox" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Device4TextBox"
+        android:hint="Device 4"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/Device3TextBox"
+        android:layout_alignLeft="@+id/Device3TextBox"
+        android:layout_alignStart="@+id/Device3TextBox" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Device5TextBox"
+        android:hint="Device 5"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/Device4TextBox"
+        android:layout_alignLeft="@+id/Device4TextBox"
+        android:layout_alignStart="@+id/Device4TextBox" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Device1TextBox"
+        android:hint="Device 1"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignLeft="@+id/ipAddressTextBox"
+        android:layout_alignStart="@+id/ipAddressTextBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox5"
+        android:checked="false"
+        android:layout_alignBaseline="@+id/Device5TextBox"
+        android:layout_alignBottom="@+id/Device5TextBox"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Device2TextBox"
+        android:hint="Device 2"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/Device1TextBox"
+        android:layout_alignLeft="@+id/Device1TextBox"
+        android:layout_alignStart="@+id/Device1TextBox" />
+
+</RelativeLayout>

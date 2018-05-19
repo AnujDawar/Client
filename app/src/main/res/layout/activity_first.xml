@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anujdawar.client.FirstActivity"
+    android:background="@android:color/transparent">
+
+    <RadioGroup
+        android:id="@+id/radioGroupID"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="Room 1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/radioButton6"
+            android:layout_weight="1"
+            android:textAlignment="textStart" />
+
+        <RadioButton
+            android:text="Room 2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/radioButton3"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignLeft="@+id/radioButton2"
+            android:layout_alignStart="@+id/radioButton2"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Room 3"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/radioButton3"
+            android:layout_alignLeft="@+id/radioButton3"
+            android:layout_alignStart="@+id/radioButton3"
+            android:id="@+id/radioButton4"
+            android:layout_height="60dp" />
+
+        <RadioButton
+            android:text="Room 4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioButton4"
+            android:layout_alignLeft="@+id/radioButton4"
+            android:layout_alignStart="@+id/radioButton4"
+            android:id="@+id/radioButton5"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Room 5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/radioButton2"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignLeft="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="Select A Room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Client</string>
+    <string name="addCommandActivity">Add Commands</string>
+    <string name="savedCommandTitle">Saved Commands</string>
+
+    <string-array name="status_of_devices_spinner">
+
+        <item>NONE</item>
+        <item>ON</item>
+        <item>OFF</item>
+
+    </string-array>
+
+</resources>

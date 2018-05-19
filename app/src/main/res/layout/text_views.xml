@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:text="Device 2 : "
+        android:layout_height="wrap_content"
+        android:id="@+id/savedNameDeviceID2"
+        android:padding="5dp"
+        android:layout_alignBaseline="@+id/tv_dev2ID"
+        android:layout_alignBottom="@+id/tv_dev2ID"
+        android:layout_alignLeft="@+id/savedNameDeviceID1"
+        android:layout_alignStart="@+id/savedNameDeviceID1"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 3 : "
+        android:layout_height="wrap_content"
+        android:id="@+id/savedNameDeviceID3"
+        android:padding="5dp"
+        android:layout_alignBaseline="@+id/tv_dev3ID"
+        android:layout_alignBottom="@+id/tv_dev3ID"
+        android:layout_alignLeft="@+id/savedNameDeviceID2"
+        android:layout_alignStart="@+id/savedNameDeviceID2"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 4 : "
+        android:layout_height="wrap_content"
+        android:id="@+id/savedNameDeviceID4"
+        android:padding="5dp"
+        android:layout_alignBaseline="@+id/tv_dev4ID"
+        android:layout_alignBottom="@+id/tv_dev4ID"
+        android:layout_alignLeft="@+id/savedNameDeviceID3"
+        android:layout_alignStart="@+id/savedNameDeviceID3"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 5 : "
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/savedNameDeviceID5"
+        android:layout_alignBaseline="@+id/tv_dev5ID"
+        android:layout_alignBottom="@+id/tv_dev5ID"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignLeft="@+id/savedNameDeviceID4"
+        android:layout_alignStart="@+id/savedNameDeviceID4"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 1"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dev1ID"
+        android:padding="5dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_below="@+id/commandID"
+        android:layout_toRightOf="@+id/savedNameDeviceID5"
+        android:layout_toEndOf="@+id/savedNameDeviceID5"
+        android:layout_marginTop="26dp"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 2"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/tv_dev2ID"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/tv_dev1ID"
+        android:layout_alignLeft="@+id/tv_dev1ID"
+        android:layout_alignStart="@+id/tv_dev1ID"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 3"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/tv_dev3ID"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/tv_dev2ID"
+        android:layout_alignLeft="@+id/tv_dev2ID"
+        android:layout_alignStart="@+id/tv_dev2ID"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 4"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/tv_dev4ID"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/tv_dev3ID"
+        android:layout_alignLeft="@+id/tv_dev3ID"
+        android:layout_alignStart="@+id/tv_dev3ID"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="Device 5"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/tv_dev5ID"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/tv_dev4ID"
+        android:layout_alignLeft="@+id/tv_dev4ID"
+        android:layout_alignStart="@+id/tv_dev4ID"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commandID"
+        android:text="Command"
+        android:padding="5dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:text="Device 1 : "
+        android:layout_height="wrap_content"
+        android:id="@+id/savedNameDeviceID1"
+        android:padding="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="150dp"
+        android:layout_above="@+id/savedNameDeviceID2"
+        android:layout_alignLeft="@+id/commandID"
+        android:layout_alignStart="@+id/commandID"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+</RelativeLayout>
